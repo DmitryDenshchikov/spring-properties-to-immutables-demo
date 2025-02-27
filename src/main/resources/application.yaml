@@ -1,0 +1,30 @@
+integer-property: 192
+
+string-property: "abc"
+
+list-property:
+  - item1
+  - item2
+  - item3
+
+array-property:
+  - item1
+  - item2
+  - item3
+
+set-property:
+  - item1
+  - item2
+  - item3
+
+map-property:
+  key1: value1
+  key2: value2
+
+multimap-property:
+  key1:
+    - value1
+    - value2
+  key2:
+    - value3
+    - value4

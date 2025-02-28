@@ -7,7 +7,12 @@ list-property:
   - item2
   - item3
 
-array-property:
+list-property-as-array:
+  - item1
+  - item2
+  - item3
+
+set-property-as-array:
   - item1
   - item2
   - item3

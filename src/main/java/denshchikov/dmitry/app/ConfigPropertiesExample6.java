@@ -7,10 +7,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Value.Immutable
 @ConfigurationProperties
 public interface ConfigPropertiesExample6 {
-  String[] arrayProperty();
+  String[] listPropertyAsArray();
 
   @Value.Derived
   default List<String> listProperty() {
-    return List.of(arrayProperty());
+    return List.of(listPropertyAsArray());
   }
 }

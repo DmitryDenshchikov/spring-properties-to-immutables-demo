@@ -12,18 +12,18 @@ public interface ConfigPropertiesExample8 {
 
   String stringProperty();
 
-  String[] listProperty();
+  String[] listPropertyAsArray();
 
-  String[] setProperty();
+  String[] setPropertyAsArray();
 
   @Value.Derived
-  default List<String> immutableListProperty() {
-    return List.of(listProperty());
+  default List<String> listProperty() {
+    return List.of(listPropertyAsArray());
   }
 
   @Value.Derived
-  default Set<String> immutableSetProperty() {
-    return Set.of(setProperty());
+  default Set<String> setProperty() {
+    return Set.of(setPropertyAsArray());
   }
 
   Map<String, String> mapProperty();
